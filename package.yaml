@@ -1,0 +1,56 @@
+name:                links
+
+github:              "blackheaven/links"
+author:              "Gautier DI FOLCO"
+version:             0.1.0
+
+dependencies:
+- base
+- aeson
+- http-types
+- network-uri
+- openapi3
+- servant
+- servant-openapi3
+- servant-server
+- wai-cors
+- warp
+
+default-extensions:
+  - DataKinds
+  - DefaultSignatures
+  - DeriveAnyClass
+  - DeriveGeneric
+  - DerivingStrategies
+  - DerivingVia
+  - DuplicateRecordFields
+  - FlexibleContexts
+  - GADTs
+  - GeneralizedNewtypeDeriving
+  - KindSignatures
+  - LambdaCase
+  - OverloadedLists
+  - OverloadedStrings
+  - RankNTypes
+  - RecordWildCards
+  - ScopedTypeVariables
+  - TypeApplications
+  - TypeFamilies
+  - TypeOperators
+
+executables:
+  links:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -Wall
+    - -Wcompat
+    - -Widentities
+    - -Wincomplete-record-updates
+    - -Wincomplete-uni-patterns
+    - -Wpartial-fields
+    - -Wredundant-constraints
+    - -Werror # comment out for more dynamic development
